@@ -1,4 +1,5 @@
 import LogoImage from '../../../assets/LogoImage.svg';
+import light from '../../../assets/light.svg';
 
 const Header = () => {
 	return (
@@ -6,6 +7,11 @@ const Header = () => {
 			<div className="flex justify-between items-center">
 				<div className="w-20 cursor-pointer">
 					<img src={LogoImage} alt="logo" />
+				</div>
+				<div>
+					<div className="w-14 cursor-pointer">
+						<img src={light} alt="light" />
+					</div>
 				</div>
 			</div>
 		</header>
