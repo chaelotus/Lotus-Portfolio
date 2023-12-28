@@ -19,6 +19,18 @@ export default {
 			boxShadow: {
 				'2xl': '0px 8px 24px rgba(149, 157, 165, 0.2)',
 			},
+			fontFamily: {
+				koreaMachineBold: ['koreaMachineBold'],
+				koreaMachineLight: ['koreaMachineLight'],
+				NanumSquareNeoBold: ['NanumSquareNeoBold'],
+				NanumSquareNeoExtraBold: ['NanumSquareNeoExtraBold'],
+				NanumSquareNeoExtraHeavy: ['NanumSquareNeoExtraHeavy'],
+				OAGothicExtraBold: ['OAGothicExtraBold'],
+				OAGothicExtraMedium: ['OAGothicExtraMedium'],
+				PretendardBold: ['PretendardBold'],
+				PretendardMedium: ['PretendardMedium'],
+				PretendardSemiBold: ['PretendardSemiBold'],
+			},
 		},
 		plugins: [],
 	},
