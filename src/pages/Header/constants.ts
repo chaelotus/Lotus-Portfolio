@@ -1,4 +1,5 @@
-export const headerNavList = [
+import { headerNavListData } from './type';
+export const headerNavList: headerNavListData = [
 	{
 		id: 'about',
 		title: 'ABOUT',
