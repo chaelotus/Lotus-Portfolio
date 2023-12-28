@@ -1,12 +1,15 @@
-import React from 'react'
-import './App.css'
+import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Container from '@mui/material/Container';
+import Header from './pages/Header/views/Header';
 
 function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+	return (
+		<BrowserRouter>
+			<Header />
+			<Container maxWidth="lg"></Container>
+		</BrowserRouter>
+	);
 }
 
-export default App
+export default App;

@@ -2,11 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+@font-face {
+	font-family: 'koreaMachineBold';
+	src: url(/src/assets/fonts/한국기계연구원_bold.ttf);
+	font-display: swap;
 }
-body{
-  background-color: #F5F5F7;
+@font-face {
+	font-family: 'koreaMachineLight';
+	src: url(/src/assets/fonts/한국기계연구원_Light.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NanumSquareNeoBold';
+	src: url(/src/assets/fonts/NanumSquareNeo-bRg.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NanumSquareNeoExtraBold';
+	src: url(/src/assets/fonts/NanumSquareNeo-dEb.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'NanumSquareNeoExtraHeavy';
+	src: url(/src/assets/fonts/NanumSquareNeo-eHv.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'OAGothicExtraBold';
+	src: url(/src/assets/fonts/OAGothic-ExtraBold.ttf);
+}
+@font-face {
+	font-family: 'OAGothicExtraMedium';
+	src: url(/src/assets/fonts/OAGothic-Medium.ttf);
+}
+@font-face {
+	font-family: 'PretendardBold';
+	src: url(/src/assets/fonts/Pretendard-Bold.woff2);
+}
+@font-face {
+	font-family: 'PretendardMedium';
+	src: url(/src/assets/fonts/Pretendard-Medium.woff2);
+}
+@font-face {
+	font-family: 'PretendardSemiBold';
+	src: url(/src/assets/fonts/Pretendard-SemiBold.woff2);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f5f5f7;
+}
+ol {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
 }
