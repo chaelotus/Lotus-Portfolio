@@ -1,4 +1,6 @@
-export const LotusPageMainText = {
+import { LotusPageMainTextType } from './type';
+
+export const LotusPageMainText: LotusPageMainTextType = {
 	text: [
 		'FRONTEND DEVELOPER',
 		'안녕하세요. 기술발전에 끊임없이 욕심내는',
