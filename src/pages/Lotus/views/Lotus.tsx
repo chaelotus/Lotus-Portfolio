@@ -14,7 +14,7 @@ const Lotus = () => {
 					</section>
 					<section className="text-3xl font-koreaMachineLight">
 						<span>{LotusPageMainText.text[2]}</span>
-						<span className="text-pointOrange">
+						<span className="text-pointOrange font-bold">
 							{LotusPageMainText.text[3]}
 						</span>
 						<span>{LotusPageMainText.text[4]}</span>
