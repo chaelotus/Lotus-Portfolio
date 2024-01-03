@@ -26,3 +26,33 @@ export const AboutFirstPageIntro2: AboutFirstPageIntro2Type[] = [
 		text: '정보처리기사 자격증을 보유하고 있습니다.',
 	},
 ];
+export const AboutSubTitle1 = 'EDUCATION';
+export const AboutSubTitle2 = 'EXPERIENCE';
+export const AboutSubTitle3 = 'CERTIFICATE';
+
+export const AboutSecondPageDetail = {
+	education: {
+		university: '동아대학교',
+		date: '2017.03 - 2022.02',
+		subtitle: '전기·전자·컴퓨터공학부 컴퓨터공학과 졸업',
+		detail: [
+			'공학교육인증제 이수',
+			'C프로그래밍, JAVA, 자료 구조, 데이터베이스, 운영체제 등 과목 수강',
+		],
+	},
+	experience: {
+		agency: '코드스테이츠',
+		date: '2023.02 - 2023.08',
+		subtitle: '프론트엔드 개발자 과정 수료',
+		detail: [
+			'JavaScript, React 기본 문법, 네트워크, Node.js와 같은 전반적인 지식 습득',
+			'20주 동안 매일 강도 높은 과제 수행 및 페어 프로그래밍과 코드 리뷰 경험',
+			'협업 프로젝트 2회 진행 - 프로젝트 진행 통해 Git/Github 다루는 능력 향상',
+		],
+	},
+	certificate: {
+		National: '정보처리기사',
+		date: '2023.06',
+		detail: ['한국산업인력공단'],
+	},
+};
