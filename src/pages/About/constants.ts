@@ -1,4 +1,8 @@
-import { AboutFirstPageIntroType, AboutFirstPageIntro2Type } from './type';
+import {
+	AboutFirstPageIntroType,
+	AboutFirstPageIntro2Type,
+	AboutSecondPageDetailType,
+} from './type';
 
 export const AboutTitle = 'ABOUT ME';
 export const AboutFirstPageIntro: AboutFirstPageIntroType = {
@@ -30,7 +34,7 @@ export const AboutSubTitle1 = 'EDUCATION';
 export const AboutSubTitle2 = 'EXPERIENCE';
 export const AboutSubTitle3 = 'CERTIFICATE';
 
-export const AboutSecondPageDetail = {
+export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 	education: {
 		university: '동아대학교',
 		date: '2017.03 - 2022.02',
