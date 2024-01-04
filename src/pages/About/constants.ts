@@ -36,7 +36,7 @@ export const AboutSubTitle3 = 'CERTIFICATE';
 
 export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 	education: {
-		university: '동아대학교',
+		agency: '동아대학교',
 		date: '2017.03 - 2022.02',
 		subtitle: '전기·전자·컴퓨터공학부 컴퓨터공학과 졸업',
 		detail: [
@@ -55,8 +55,9 @@ export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 		],
 	},
 	certificate: {
-		National: '정보처리기사',
+		agency: '정보처리기사',
 		date: '2023.06',
+		subtitle: null,
 		detail: ['한국산업인력공단'],
 	},
 };
