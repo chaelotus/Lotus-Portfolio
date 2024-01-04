@@ -3,7 +3,16 @@ import {
 	AboutTitle,
 	AboutFirstPageIntro,
 	AboutFirstPageIntro2,
+	AboutSecondPageDetail,
+	AboutSubTitle1,
+	AboutSubTitle2,
+	AboutSubTitle3,
 } from '../constants';
+import donga from '../../../assets/donga.svg';
+import codestate from '../../../assets/codestate.svg';
+import certificate from '../../../assets/certificate.svg';
+import SpecCardGroup from '../../../common/components/SpecCardGroup';
+
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
 	return (
@@ -18,7 +27,7 @@ const About = () => {
 					{hoverText}
 				</div>
 			</div>
-			<div className="text-2xl font-NanumSquareNeoBold">
+			<div className="text-2xl font-NanumSquareNeoBold pb-[6.8rem]">
 				{AboutFirstPageIntro2.map((text) => (
 					<div
 						className="mb-6"
@@ -30,6 +39,24 @@ const About = () => {
 					</div>
 				))}
 			</div>
+			<SpecCardGroup
+				title={AboutSubTitle1}
+				svgFile={donga}
+				sectionType="education"
+				dataObject={AboutSecondPageDetail.education}
+			/>
+			<SpecCardGroup
+				title={AboutSubTitle2}
+				svgFile={codestate}
+				sectionType="experience"
+				dataObject={AboutSecondPageDetail.experience}
+			/>
+			<SpecCardGroup
+				title={AboutSubTitle3}
+				svgFile={certificate}
+				sectionType="certificate"
+				dataObject={AboutSecondPageDetail.certificate}
+			/>
 		</div>
 	);
 };
