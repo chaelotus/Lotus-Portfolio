@@ -33,6 +33,7 @@ export const AboutFirstPageIntro2: AboutFirstPageIntro2Type[] = [
 export const AboutSubTitle1 = 'EDUCATION';
 export const AboutSubTitle2 = 'EXPERIENCE';
 export const AboutSubTitle3 = 'CERTIFICATE';
+export const AboutSubTtile4 = 'STUDIES';
 
 export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 	education: {
@@ -59,5 +60,35 @@ export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 		date: '2023.06',
 		subtitle: null,
 		detail: ['한국산업인력공단'],
+	},
+};
+export const StudyDetail = [
+	'각 스터디 카드',
+	'를 클릭하면 해당 스터디의 레포지토리가 새창으로 띄워집니다!',
+];
+export const AboutThirdPageDetail = {
+	algorithm: {
+		title: 'JavaScript 알고리즘',
+		date: '2023.04 - 현재',
+		detail: [
+			'JavaScript 언어로 주로 알고리즘 문제를 주어진 시간 안에 해결하고, 문제에 대한 내용을 정리하여 기록합니다.',
+			'커밋으로 ‘문제 해결, 다시 풀기’를 구분하여 풀지 못한 문제는 다시 풀어보는 시간을 가집니다.',
+		],
+	},
+	deepdive: {
+		title: '자바스크립트 딥다이브 스터디',
+		date: '2023.02 - 2023.05 ',
+		detail: [
+			'자바스크립트 딥다이브 책을 통해 각자 공부한 것을 기록하고 발표합니다.',
+			'매주 화요일, 목요일에 진행하고 해당 기간 전까지 정리한 내용을 Pull Request 합니다.',
+		],
+	},
+	interview: {
+		title: '프론트엔드 기술 면접 스터디',
+		date: '2023.09 - 현재 ',
+		detail: [
+			'프론트엔드 개발자가 알아야 할 전반적인 기술 면접에 대해 각자 정리하고 발표합니다.',
+			'CS 지식, React, JavaScript, Network 등의 카테고리로 나누어 기록합니다.',
+		],
 	},
 };
