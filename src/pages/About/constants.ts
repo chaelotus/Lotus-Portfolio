@@ -2,6 +2,7 @@ import {
 	AboutFirstPageIntroType,
 	AboutFirstPageIntro2Type,
 	AboutSecondPageDetailType,
+	AboutThirdPageDetailType,
 } from './type';
 
 export const AboutTitle = 'ABOUT ME';
@@ -62,11 +63,11 @@ export const AboutSecondPageDetail: AboutSecondPageDetailType = {
 		detail: ['한국산업인력공단'],
 	},
 };
-export const StudyDetail = [
+export const StudyDetail: string[] = [
 	'각 스터디 카드',
 	'를 클릭하면 해당 스터디의 레포지토리가 새창으로 띄워집니다!',
 ];
-export const AboutThirdPageDetail = {
+export const AboutThirdPageDetail: AboutThirdPageDetailType = {
 	algorithm: {
 		title: 'JavaScript 알고리즘',
 		date: '2023.04 - 현재',

@@ -25,3 +25,20 @@ export type AboutSecondPageDetailType = {
 		detail: string[];
 	};
 };
+export type AboutThirdPageDetailType = {
+	algorithm: {
+		title: string;
+		date: string;
+		detail: string[];
+	};
+	deepdive: {
+		title: string;
+		date: string;
+		detail: string[];
+	};
+	interview: {
+		title: string;
+		date: string;
+		detail: string[];
+	};
+};
