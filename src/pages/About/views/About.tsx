@@ -7,11 +7,15 @@ import {
 	AboutSubTitle1,
 	AboutSubTitle2,
 	AboutSubTitle3,
+	AboutSubTtile4,
+	StudyDetail,
+	AboutThirdPageDetail,
 } from '../constants';
 import donga from '../../../assets/donga.svg';
 import codestate from '../../../assets/codestate.svg';
 import certificate from '../../../assets/certificate.svg';
 import SpecCardGroup from '../../../common/components/SpecCardGroup';
+import StudyCard from '../../../common/components/StudyCard';
 
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
@@ -39,23 +43,46 @@ const About = () => {
 					</div>
 				))}
 			</div>
-			<SpecCardGroup
-				title={AboutSubTitle1}
-				svgFile={donga}
-				sectionType="education"
-				dataObject={AboutSecondPageDetail.education}
+			<div className="pb-[14rem]">
+				<SpecCardGroup
+					title={AboutSubTitle1}
+					svgFile={donga}
+					sectionType="education"
+					dataObject={AboutSecondPageDetail.education}
+				/>
+				<SpecCardGroup
+					title={AboutSubTitle2}
+					svgFile={codestate}
+					sectionType="experience"
+					dataObject={AboutSecondPageDetail.experience}
+				/>
+				<SpecCardGroup
+					title={AboutSubTitle3}
+					svgFile={certificate}
+					sectionType="certificate"
+					dataObject={AboutSecondPageDetail.certificate}
+				/>
+			</div>
+			<div className="flex items-center text-3xl pb-[5rem]">
+				<div className="font-NanumSquareNeoExtraBold mr-5">
+					{AboutSubTtile4}
+				</div>
+				<div className="border-l-2 border-gray pl-5">
+					<span className="text-pointOrange">{StudyDetail[0]}</span>
+					<span className="text-lineGray">{StudyDetail[1]}</span>
+				</div>
+			</div>
+			<StudyCard
+				sectionType="algorithm"
+				dataObject={AboutThirdPageDetail.algorithm}
 			/>
-			<SpecCardGroup
-				title={AboutSubTitle2}
-				svgFile={codestate}
-				sectionType="experience"
-				dataObject={AboutSecondPageDetail.experience}
+			<StudyCard
+				sectionType="deepdive"
+				dataObject={AboutThirdPageDetail.deepdive}
 			/>
-			<SpecCardGroup
-				title={AboutSubTitle3}
-				svgFile={certificate}
-				sectionType="certificate"
-				dataObject={AboutSecondPageDetail.certificate}
+			<StudyCard
+				sectionType="interview"
+				dataObject={AboutThirdPageDetail.interview}
 			/>
 		</div>
 	);
