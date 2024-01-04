@@ -7,7 +7,7 @@ export type AboutFirstPageIntro2Type = {
 };
 export type AboutSecondPageDetailType = {
 	education: {
-		university: string;
+		agency: string;
 		date: string;
 		subtitle: string;
 		detail: string[];
@@ -19,8 +19,9 @@ export type AboutSecondPageDetailType = {
 		detail: string[];
 	};
 	certificate: {
-		National: string;
+		agency: string;
 		date: string;
+		subtitle: null;
 		detail: string[];
 	};
 };
