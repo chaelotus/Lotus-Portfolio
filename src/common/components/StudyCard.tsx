@@ -1,17 +1,15 @@
 import { AboutThirdPageDetailType } from '../../pages/About/type';
 import { PiArrowElbowDownRightThin } from 'react-icons/pi';
 type StudyCardProps<T extends keyof AboutThirdPageDetailType> = {
-	sectionType: T;
 	url: string;
 	dataObject: AboutThirdPageDetailType[T];
 };
 
 const StudyCard = <T extends keyof AboutThirdPageDetailType>({
-	sectionType,
 	url,
 	dataObject,
 }: StudyCardProps<T>) => {
-	const sectionData = extractSectionData(sectionType, dataObject);
+	const sectionData = extractSectionData(dataObject);
 
 	return (
 		<div
@@ -42,7 +40,6 @@ const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 	);
 };
 function extractSectionData<T extends keyof AboutThirdPageDetailType>(
-	sectionType: T,
 	dataObject: AboutThirdPageDetailType[T],
 ): AboutThirdPageDetailType[T] {
 	return dataObject;

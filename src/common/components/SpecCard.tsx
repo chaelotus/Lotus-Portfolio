@@ -3,16 +3,14 @@ import { AboutSecondPageDetailType } from '../../pages/About/type';
 
 type SpecCardProps<T extends keyof AboutSecondPageDetailType> = {
 	svgFile: string;
-	sectionType: T;
 	dataObject: AboutSecondPageDetailType[T];
 };
 
 const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 	svgFile,
-	sectionType,
 	dataObject,
 }: SpecCardProps<T>) => {
-	const sectionData = extractSectionData(sectionType, dataObject);
+	const sectionData = extractSectionData(dataObject);
 	return (
 		<div className="flex justify-between items-center bg-white rounded-xl p-5 font-NanumSquareNeoBold">
 			<section className="w-[15%]">
@@ -45,7 +43,6 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 	);
 };
 function extractSectionData<T extends keyof AboutSecondPageDetailType>(
-	sectionType: T,
 	dataObject: AboutSecondPageDetailType[T],
 ): AboutSecondPageDetailType[T] {
 	return dataObject;

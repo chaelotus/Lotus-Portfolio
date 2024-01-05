@@ -47,19 +47,16 @@ const About = () => {
 				<SpecCardGroup
 					title={AboutSubTitle1}
 					svgFile={donga}
-					sectionType="education"
 					dataObject={AboutSecondPageDetail.education}
 				/>
 				<SpecCardGroup
 					title={AboutSubTitle2}
 					svgFile={codestate}
-					sectionType="experience"
 					dataObject={AboutSecondPageDetail.experience}
 				/>
 				<SpecCardGroup
 					title={AboutSubTitle3}
 					svgFile={certificate}
-					sectionType="certificate"
 					dataObject={AboutSecondPageDetail.certificate}
 				/>
 			</div>
@@ -73,17 +70,14 @@ const About = () => {
 				</div>
 			</div>
 			<StudyCard
-				sectionType="algorithm"
 				url="https://github.com/chaelotus/Algorithm"
 				dataObject={AboutThirdPageDetail.algorithm}
 			/>
 			<StudyCard
-				sectionType="deepdive"
 				url="https://github.com/22yuu/Javascript-Deep-Dive-Study"
 				dataObject={AboutThirdPageDetail.deepdive}
 			/>
 			<StudyCard
-				sectionType="interview"
 				url="https://github.com/chaelotus/frontend-interview-study"
 				dataObject={AboutThirdPageDetail.interview}
 			/>
