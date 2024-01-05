@@ -2,17 +2,22 @@ import { AboutThirdPageDetailType } from '../../pages/About/type';
 import { PiArrowElbowDownRightThin } from 'react-icons/pi';
 type StudyCardProps<T extends keyof AboutThirdPageDetailType> = {
 	sectionType: T;
+	url: string;
 	dataObject: AboutThirdPageDetailType[T];
 };
 
 const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 	sectionType,
+	url,
 	dataObject,
 }: StudyCardProps<T>) => {
 	const sectionData = extractSectionData(sectionType, dataObject);
 
 	return (
-		<div className="bg-white rounded-xl p-6 font-NanumSquareNeoBold cursor-pointer mb-8">
+		<div
+			className="bg-white rounded-xl p-6 font-NanumSquareNeoBold cursor-pointer mb-8"
+			onClick={() => window.open(`${url}`)}
+		>
 			<div className="flex text-2xl mb-6">
 				<div className="font-bold text-pointOrange mr-5">
 					{sectionData.title}

@@ -74,14 +74,17 @@ const About = () => {
 			</div>
 			<StudyCard
 				sectionType="algorithm"
+				url="https://github.com/chaelotus/Algorithm"
 				dataObject={AboutThirdPageDetail.algorithm}
 			/>
 			<StudyCard
 				sectionType="deepdive"
+				url="https://github.com/22yuu/Javascript-Deep-Dive-Study"
 				dataObject={AboutThirdPageDetail.deepdive}
 			/>
 			<StudyCard
 				sectionType="interview"
+				url="https://github.com/chaelotus/frontend-interview-study"
 				dataObject={AboutThirdPageDetail.interview}
 			/>
 		</div>
