@@ -5,6 +5,7 @@ import Header from './pages/Header/views/Header';
 import Lotus from './pages/Lotus/views/Lotus';
 import About from './pages/About/views/About';
 import Skills from './pages/Skills/views/Skills';
+import Project from './pages/Project/views/Project';
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 				<Lotus />
 				<About />
 				<Skills />
+				<Project />
 			</Container>
 		</BrowserRouter>
 	);
