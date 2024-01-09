@@ -5,7 +5,7 @@ import Button from '../../../common/components/Button';
 
 const Header = () => {
 	return (
-		<header className="pt-4 pb-4 pr-8 pl-8 fixed w-full flex justify-between items-center">
+		<header className="pt-4 pb-4 pr-8 pl-8 fixed w-full flex justify-between items-center z-10 header">
 			<div className="w-20 cursor-pointer">
 				<img src={LogoImage} alt="logo" />
 			</div>
