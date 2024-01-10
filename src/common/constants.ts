@@ -59,3 +59,4 @@ export const ProjectPageInfo: ProjectPageInfoType = {
 		],
 	},
 };
+export const CloseBtn = 'CLOSE';
