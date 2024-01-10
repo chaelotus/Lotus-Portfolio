@@ -15,6 +15,7 @@ export default {
 				pointOrange: '#F1A33B',
 				porintGreen: '#45C96A',
 				porintBlue: '#0A84FF',
+				backgroundGray: '#f5f5f7',
 			},
 			boxShadow: {
 				'2xl': '0px 8px 24px rgba(149, 157, 165, 0.2)',
