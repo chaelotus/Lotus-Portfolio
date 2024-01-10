@@ -10,6 +10,8 @@ import Skills from './pages/Skills/views/Skills';
 import Project from './pages/Project/views/Project';
 import rootReducer from './common/store/Store';
 import DetailModal from './pages/Detail/views/DetailModal';
+import Contact from './pages/Contact/views/Contact';
+import Footer from './pages/Footer/views/Footer';
 
 const store = createStore(rootReducer);
 function App() {
@@ -22,8 +24,10 @@ function App() {
 					<About />
 					<Skills />
 					<Project />
+					<Contact />
 				</Container>
 				<DetailModal />
+				<Footer />
 			</BrowserRouter>
 		</Provider>
 	);
