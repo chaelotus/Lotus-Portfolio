@@ -15,7 +15,7 @@ const Project = () => {
 			sectionRef.current, // gsap 애니메이션이 시작되는 요소 위치
 			// 초기 시작, from 부분
 			{
-				translateX: 100,
+				translateX: 0,
 			},
 			// 끝 나는 부분, to 부분
 			{
