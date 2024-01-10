@@ -12,6 +12,7 @@ import rootReducer from './common/store/Store';
 import DetailModal from './pages/Detail/views/DetailModal';
 import Contact from './pages/Contact/views/Contact';
 import Footer from './pages/Footer/views/Footer';
+import MoveToTop from './common/components/MoveToTop';
 
 const store = createStore(rootReducer);
 function App() {
@@ -19,6 +20,7 @@ function App() {
 		<Provider store={store}>
 			<BrowserRouter>
 				<Header />
+				<MoveToTop />
 				<Container maxWidth="lg">
 					<Lotus />
 					<About />
