@@ -35,7 +35,7 @@ const Project = () => {
 	}, []);
 	return (
 		<section
-			className="relative project-section flex flex-col pt-[20rem] mb-[20rem] h-screen"
+			className="relative project-section flex flex-col pt-[20rem] mb-[20rem] h-screen dark:text-white"
 			id="project"
 		>
 			<h1 className="items-start text-3xl font-NanumSquareNeoExtraBold mb-[5rem]">

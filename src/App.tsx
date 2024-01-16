@@ -19,17 +19,19 @@ function App() {
 	return (
 		<Provider store={store}>
 			<BrowserRouter>
-				<Header />
-				<MoveToTop />
-				<Container maxWidth="lg">
-					<Lotus />
-					<About />
-					<Skills />
-					<Project />
-					<Contact />
-				</Container>
-				<DetailModal />
-				<Footer />
+				<div className="dark:bg-[#222222]">
+					<Header />
+					<MoveToTop />
+					<Container maxWidth="lg">
+						<Lotus />
+						<About />
+						<Skills />
+						<Project />
+						<Contact />
+					</Container>
+					<DetailModal />
+					<Footer />
+				</div>
 			</BrowserRouter>
 		</Provider>
 	);

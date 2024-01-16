@@ -28,7 +28,10 @@ const ProjectSection = <T extends keyof ProjectPageInfoType>({
 				</div>
 				<div>
 					{data.detail.map((detail) => (
-						<div key={detail} className="text-lg text-pointGray">
+						<div
+							key={detail}
+							className="text-lg text-pointGray dark:text-[#dbdbd6]"
+						>
 							{detail}
 						</div>
 					))}

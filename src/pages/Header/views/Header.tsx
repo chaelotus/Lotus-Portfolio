@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import LogoImage from '../../../assets/LogoImage.svg';
 import light from '../../../assets/light.svg';
 import dark from '../../../assets/dark.svg';
@@ -7,25 +7,25 @@ import { headerNavList } from '../constants';
 import Button from '../../../common/components/Button';
 import { RootState } from '../../../common/store/Store';
 import { Link } from 'react-scroll';
-import { darkMode, lightMode } from '../../../common/reducers/DarkMode';
+import useDarkMode, {
+	useDarkModeType,
+} from '../../../common/utils/customHooks/useDarkMode';
 
 const Header = () => {
-	const [LightImageIsClick, setLightImageIsClick] = useState(false);
+	const [isDarkModeClick, setIsDarkModeClick] = useState(false);
 	const isOpen = useSelector((state: RootState) => state.ModalReducer.isOpen);
-	const isDark = useSelector(
-		(state: RootState) => state.DarkModeReducer.isDark,
-	);
-	const dispatch = useDispatch();
 
-	const handleLightImage = () => {
-		setLightImageIsClick(!LightImageIsClick);
-		if (LightImageIsClick) {
-			dispatch(darkMode());
+	const [isDark, onToggleDarkMode]: useDarkModeType = useDarkMode();
+
+	const handleDarkModeClick = () => {
+		setIsDarkModeClick(!isDarkModeClick);
+
+		if (isDark) {
+			onToggleDarkMode();
 		} else {
-			dispatch(lightMode());
+			onToggleDarkMode();
 		}
 	};
-
 	if (!isOpen) {
 		return (
 			<header className="pt-4 pb-4 pr-8 pl-8 fixed w-full flex justify-between items-center z-10 header">
@@ -51,8 +51,8 @@ const Header = () => {
 						</Link>
 					))}
 					<li
-						onClick={handleLightImage}
 						className="w-14 cursor-pointer items-center"
+						onClick={handleDarkModeClick}
 					>
 						{isDark ? (
 							<img src={dark} alt="dark" />
