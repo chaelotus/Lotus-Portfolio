@@ -20,9 +20,12 @@ import StudyCard from '../../../common/components/StudyCard';
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
 	return (
-		<div className="h-[calc(300vh-12.588rem)] pt-[12.588rem]" id="about">
+		<div
+			className="h-[calc(300vh-12.588rem)] pt-[12.588rem] dark:text-white"
+			id="about"
+		>
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold">{AboutTitle}</h1>
-			<div className="pb-20 font-NanumSquareNeoBold">
+			<div className="pb-20 font-NanumSquareNeoBold dark:text-gray">
 				{AboutFirstPageIntro.text[0]}
 			</div>
 			<div className="flex pb-16 font-NanumSquareNeoBold">
@@ -43,6 +46,7 @@ const About = () => {
 					</div>
 				))}
 			</div>
+
 			<div className="pb-[14rem]">
 				<SpecCardGroup
 					title={AboutSubTitle1}
@@ -69,6 +73,7 @@ const About = () => {
 					<span className="text-lineGray">{StudyDetail[1]}</span>
 				</div>
 			</div>
+
 			<StudyCard
 				url="https://github.com/chaelotus/Algorithm"
 				dataObject={AboutThirdPageDetail.algorithm}

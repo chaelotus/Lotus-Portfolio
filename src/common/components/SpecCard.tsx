@@ -12,7 +12,7 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 }: SpecCardProps<T>) => {
 	const sectionData = extractSectionData(dataObject);
 	return (
-		<div className="flex justify-between items-center bg-white rounded-xl p-5 font-NanumSquareNeoBold">
+		<div className="flex justify-between items-center bg-white rounded-xl p-5 font-NanumSquareNeoBold dark:text-black">
 			<section className="w-[15%]">
 				<img className="w-[95px]" src={svgFile} />
 			</section>

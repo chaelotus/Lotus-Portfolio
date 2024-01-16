@@ -11,8 +11,8 @@ const DetailModal = () => {
 	return (
 		isOpen &&
 		createPortal(
-			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-backgroundGray z-999">
-				<div className="bg-backgroundGray p-[20px] w-[80%] z-1000 h-full relative">
+			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-backgroundGray z-999 dark:bg-[#222222]">
+				<div className="bg-backgroundGray p-[20px] w-[80%] z-1000 h-full relative dark:bg-[#222222] dark:text-white">
 					<div className="fixed flex right-20">
 						<CloseButton />
 					</div>

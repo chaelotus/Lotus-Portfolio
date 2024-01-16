@@ -28,7 +28,7 @@ const ProjectCard = ({
 			</div>
 
 			<div className="h-[15%] flex justify-between items-center bg-white p-5 rounded-b-xl">
-				<div className="text-xl">{projectTitle}</div>
+				<div className="text-xl dark:text-black">{projectTitle}</div>
 				<div onClick={handleClick}>
 					<ClickButton />
 				</div>
