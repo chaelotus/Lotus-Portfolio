@@ -2,7 +2,7 @@ import SkillCard from '../../../common/components/SkillCard';
 import { SkillsTitle, SkillsDetail } from '../constants';
 const Skills = () => {
 	return (
-		<div className="h-screen">
+		<div className="h-screen py-[20rem]">
 			<h1
 				className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem]"
 				id="skills"
