@@ -20,7 +20,7 @@ import StudyCard from '../../../common/components/StudyCard';
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
 	return (
-		<div className="h-[300vh] pt-[8.188rem]">
+		<div className="h-[calc(300vh-12.588rem)] pt-[12.588rem]" id="about">
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold">{AboutTitle}</h1>
 			<div className="pb-20 font-NanumSquareNeoBold">
 				{AboutFirstPageIntro.text[0]}
@@ -31,7 +31,7 @@ const About = () => {
 					{hoverText}
 				</div>
 			</div>
-			<div className="text-2xl font-NanumSquareNeoBold pb-[6.8rem]">
+			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem]">
 				{AboutFirstPageIntro2.map((text) => (
 					<div
 						className="mb-6"

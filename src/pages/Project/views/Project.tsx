@@ -19,10 +19,10 @@ const Project = () => {
 			},
 			// 끝 나는 부분, to 부분
 			{
-				translateX: -3400,
+				translateX: -3200,
 				scrollTrigger: {
 					trigger: triggerRef.current, // 스크롤이 발생되는 요소 위치
-					start: 'top 130', // trigger의 상단이 뷰포트 상단에 닿을 때
+					start: 'top 230', // trigger의 상단이 뷰포트 상단에 닿을 때
 					end: 'bottom center', // 트리거의 하단이 스크롤러의 중앙에 닿을 때
 					scrub: 1, // 되감기 기능, 또한 스크롤을 부드러운 애니메이션 추가.
 					pin: '.project-section', // 가로스크롤시 페이지를 고정할 수 있는 기능
@@ -34,14 +34,14 @@ const Project = () => {
 		}; // 모든 애니메이션 중단
 	}, []);
 	return (
-		<section className="relative project-section flex flex-col items-center">
-			<h1 className="absolute text-3xl left-0 font-NanumSquareNeoExtraBold">
+		<section
+			className="relative project-section flex flex-col pt-[20rem] mb-[20rem] h-screen"
+			id="project"
+		>
+			<h1 className="items-start text-3xl font-NanumSquareNeoExtraBold mb-[5rem]">
 				PROJECT
 			</h1>
-			<div
-				ref={triggerRef}
-				className=" h-[calc(100vh-130px)] w-full flex items-center"
-			>
+			<div ref={triggerRef} className="w-full flex items-center">
 				<div ref={sectionRef} className="flex flex-row">
 					<div className="w-[1100px] h-[630px] mr-[200px] p-8">
 						<ProjectSection dataObject={ProjectPageInfo.playpack} />
