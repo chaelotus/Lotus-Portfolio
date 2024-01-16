@@ -19,7 +19,15 @@ const Header = () => {
 				</Link>
 				<ul className="flex justify-between items-center">
 					{headerNavList.map((item) => (
-						<Link activeClass="active" to={item.id} spy={true} smooth={true}>
+						<Link
+							activeClass="active"
+							key={item.id}
+							to={item.id}
+							spy={true}
+							smooth={true}
+							offset={item.offset}
+							duration={500}
+						>
 							<li key={item.id}>
 								<Button children={item.title} />
 							</li>
