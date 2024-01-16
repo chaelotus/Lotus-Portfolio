@@ -3,7 +3,10 @@ import { SkillsTitle, SkillsDetail } from '../constants';
 const Skills = () => {
 	return (
 		<div className="h-screen">
-			<h1 className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem]">
+			<h1
+				className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem]"
+				id="skills"
+			>
 				{SkillsTitle}
 			</h1>
 			<div className="grid grid-cols-5 gap-x-12 gap-y-12">

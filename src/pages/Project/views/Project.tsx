@@ -34,7 +34,10 @@ const Project = () => {
 		}; // 모든 애니메이션 중단
 	}, []);
 	return (
-		<section className="relative project-section flex flex-col items-center">
+		<section
+			className="relative project-section flex flex-col items-center"
+			id="project"
+		>
 			<h1 className="absolute text-3xl left-0 font-NanumSquareNeoExtraBold">
 				PROJECT
 			</h1>

@@ -3,7 +3,7 @@ import { LernMoreText, LotusPageMainText } from '../constants';
 
 const Lotus = () => {
 	return (
-		<article className="flex-col h-screen">
+		<article className="flex-col h-screen" id="Lotus">
 			<article className="flex justify-between items-center pt-[110px] h-[43.125rem]">
 				<section>
 					<section className="text-6xl font-PretendardMedium mb-2">

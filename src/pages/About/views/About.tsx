@@ -20,7 +20,7 @@ import StudyCard from '../../../common/components/StudyCard';
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
 	return (
-		<div className="h-[300vh] pt-[8.188rem]">
+		<div className="h-[300vh] pt-[8.188rem]" id="about">
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold">{AboutTitle}</h1>
 			<div className="pb-20 font-NanumSquareNeoBold">
 				{AboutFirstPageIntro.text[0]}
