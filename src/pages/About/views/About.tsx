@@ -24,7 +24,9 @@ const About = () => {
 			className="h-[calc(300vh-12.588rem)] md:h-[300vh] pt-[12.588rem] dark:text-white"
 			id="about"
 		>
-			<h1 className="text-3xl font-NanumSquareNeoExtraBold">{AboutTitle}</h1>
+			<h1 className="text-3xl font-NanumSquareNeoExtraBold sm:text-2xl">
+				{AboutTitle}
+			</h1>
 			<div className="pb-20 font-NanumSquareNeoBold dark:text-gray">
 				{AboutFirstPageIntro.text[0]}
 			</div>
