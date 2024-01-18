@@ -1,9 +1,11 @@
 const ContactCard = () => {
 	return (
-		<div className="flex flex-col justify-center w-[337px] h-[400px] border-solid border-2 border-indigo-600">
+		<div className="flex flex-col justify-center w-[337px] h-[400px] border-solid border-2 border-indigo-600 md:w-[200px] md:h-[350px] sm:w-[170px] sm:h-[330px] mobile:w-[350px] mobile:h-[130px] mobile:mb-3 mobile:flex-row">
 			{/* <img /> */}
-			<div className="bg-white h-[60%]">이미지</div>
-			<div className="h-[40%]">
+			<div className="bg-white h-[60%] mobile:w-[40%] mobile:h-full">
+				이미지
+			</div>
+			<div className="h-[40%] mobile:w-[60%] mobile:h-full">
 				<span>텍스트</span>
 				<div className="flex">
 					{/* <img /> */}

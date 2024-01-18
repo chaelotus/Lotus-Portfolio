@@ -13,13 +13,14 @@ import DetailModal from './pages/Detail/views/DetailModal';
 import Contact from './pages/Contact/views/Contact';
 import Footer from './pages/Footer/views/Footer';
 import MoveToTop from './common/components/MoveToTop';
+import SmallSizeNav from './common/components/SmallSizeNav';
 
 const store = createStore(rootReducer);
 function App() {
 	return (
 		<Provider store={store}>
 			<BrowserRouter>
-				<div className="dark:bg-[#222222]">
+				<div className="dark:bg-[#222222] overflow-x-hidden">
 					<Header />
 					<MoveToTop />
 					<Container maxWidth="lg">
@@ -29,6 +30,7 @@ function App() {
 						<Project />
 						<Contact />
 					</Container>
+					<SmallSizeNav />
 					<DetailModal />
 					<Footer />
 				</div>

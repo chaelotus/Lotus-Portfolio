@@ -13,25 +13,30 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 	const sectionData = extractSectionData(dataObject);
 	return (
 		<div className="flex justify-between items-center bg-white rounded-xl p-5 font-NanumSquareNeoBold dark:text-black">
-			<section className="w-[15%]">
+			<section className="w-[15%] md:shrink-0 sm:shrink-2 sm:mr-2 mobile:shrink-2 mobile:mr-2">
 				<img className="w-[95px]" src={svgFile} />
 			</section>
 			<section className="flex-col w-[25%]">
-				<div className="font-bold text-xl mb-2">{sectionData.agency}</div>
-				<div className="text-pointGray text-xs font-bold">
+				<div className="font-bold text-xl mb-2 sm:text-base mobile:text-xs">
+					{sectionData.agency}
+				</div>
+				<div className="text-pointGray text-xs mobile:text-[5px] font-bold">
 					{sectionData.date}
 				</div>
 			</section>
 			<section className="w-[60%]">
-				<h1 className="text-xl pb-3 text-pointOrange">
+				<h1 className="text-xl md:text-lg sm:text-base mobile:text-xs pb-3 text-pointOrange">
 					{sectionData.subtitle}
 				</h1>
 				<ul className="list-disc text-pointGray">
 					{sectionData.detail.map((text: string, index: number) => {
 						return (
-							<div className="flex items-center">
-								<TfiWidgetAlt />
-								<li className="pl-2" key={index}>
+							<div className="flex items-start sm:mb-2 mobile:mb-2">
+								<TfiWidgetAlt className="sm:text-sm mobile:text-xs" />
+								<li
+									className="pl-2 md:text-sm sm:text-xs mobile:text-[6px]"
+									key={index}
+								>
 									{text}
 								</li>
 							</div>

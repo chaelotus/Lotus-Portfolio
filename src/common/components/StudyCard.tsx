@@ -16,11 +16,11 @@ const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 			className="bg-white rounded-xl p-6 font-NanumSquareNeoBold cursor-pointer mb-8"
 			onClick={() => window.open(`${url}`)}
 		>
-			<div className="flex text-2xl mb-6">
+			<div className="flex text-2xl md:text-xl sm:text-lg mobile:text-[11px] mb-6">
 				<div className="font-bold text-pointOrange mr-5">
 					{sectionData.title}
 				</div>
-				<div className="text-gray border-l-2 border-gray pl-5">
+				<div className="text-gray border-l-2 border-gray pl-5 mobile:border-l-0">
 					{sectionData.date}
 				</div>
 			</div>
@@ -29,7 +29,10 @@ const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 					return (
 						<div className="flex items-center">
 							<PiArrowElbowDownRightThin />
-							<li className="ml-3 text-pointGray" key={index}>
+							<li
+								className="ml-3 text-pointGray md:text-base sm:text-sm mobile:text-xs"
+								key={index}
+							>
 								{text}
 							</li>
 						</div>
