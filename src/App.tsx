@@ -20,7 +20,7 @@ function App() {
 	return (
 		<Provider store={store}>
 			<BrowserRouter>
-				<div className="dark:bg-[#222222]">
+				<div className="dark:bg-[#222222] overflow-x-hidden">
 					<Header />
 					<MoveToTop />
 					<Container maxWidth="lg">
