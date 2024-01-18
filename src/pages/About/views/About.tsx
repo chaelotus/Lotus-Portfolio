@@ -67,10 +67,10 @@ const About = () => {
 				/>
 			</div>
 			<div className="flex items-center text-3xl pb-[5rem]">
-				<div className="font-NanumSquareNeoExtraBold mr-5">
+				<div className="font-NanumSquareNeoExtraBold mr-5 sm:text-2xl">
 					{AboutSubTtile4}
 				</div>
-				<div className="border-l-2 border-gray pl-5 md:text-base">
+				<div className="border-l-2 border-gray pl-5 md:text-base sm:text-sm">
 					<span className="text-pointOrange">{StudyDetail[0]}</span>
 					<span className="text-lineGray">{StudyDetail[1]}</span>
 				</div>
