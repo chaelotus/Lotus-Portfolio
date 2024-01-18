@@ -8,28 +8,8 @@ const Project = () => {
 	gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 사용시 필수
 	const sectionRef = useRef(null); // useRef로 참조할 요소
 	const triggerRef = useRef(null);
-	let scrollDistance = -3200;
 	// horizontal 스크롤 애니메이션
 	useEffect(() => {
-		ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-		const updateScrollTrigger = () => {
-			const screenWidth = window.innerWidth;
-
-			if (screenWidth >= 391 && screenWidth <= 767) {
-				scrollDistance = -800;
-			} else if (screenWidth >= 769 && screenWidth <= 1023) {
-				scrollDistance = -3200;
-			} else {
-				scrollDistance = -3200;
-			}
-		};
-		updateScrollTrigger();
-		ScrollTrigger.getAll().forEach((trigger) => {
-			if (trigger.trigger === triggerRef.current) {
-				trigger.kill();
-			}
-		});
-
 		// 모든 ScrollTrigger 삭제
 		const pin = gsap.fromTo(
 			sectionRef.current, // gsap 애니메이션이 시작되는 요소 위치
@@ -39,7 +19,7 @@ const Project = () => {
 			},
 			// 끝 나는 부분, to 부분
 			{
-				translateX: scrollDistance,
+				translateX: -3200,
 				scrollTrigger: {
 					trigger: triggerRef.current, // 스크롤이 발생되는 요소 위치
 					start: 'top 140', // trigger의 상단이 뷰포트 상단에 닿을 때
