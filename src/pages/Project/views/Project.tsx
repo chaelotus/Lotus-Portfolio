@@ -38,7 +38,7 @@ const Project = () => {
 			className="relative project-section flex flex-col pt-[20rem] mb-[20rem] h-screen dark:text-white"
 			id="project"
 		>
-			<h1 className="items-start text-3xl font-NanumSquareNeoExtraBold mb-[5rem] md:mb-[3rem] sm:text-2xl">
+			<h1 className="items-start text-3xl font-NanumSquareNeoExtraBold mb-[5rem] md:mb-[3rem] sm:text-2xl mobile:text-xl mobile:mb-[2rem]">
 				PROJECT
 			</h1>
 			<div ref={triggerRef} className="w-full flex items-center">

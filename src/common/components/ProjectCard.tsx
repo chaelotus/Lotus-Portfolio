@@ -21,7 +21,7 @@ const ProjectCard = ({
 	return (
 		<div
 			onClick={handleClick}
-			className="flex flex-col w-full md:h-[400px] h-[455px] bg-white rounded-xl cursor-pointer ml-6 group md:ml-1 sm:hidden"
+			className="flex flex-col w-full md:h-[400px] h-[455px] bg-white rounded-xl cursor-pointer ml-6 group md:ml-1 sm:hidden mobile:hidden"
 		>
 			<div className=" h-[85%] rounded-t-xl overflow-hidden group-hover:scale-95 group-hover:rounded-xl transition-transform">
 				<img className="w-full md:shrink-0" src={svgFile} />
