@@ -29,17 +29,17 @@ const About = () => {
 				{AboutFirstPageIntro.text[0]}
 			</div>
 			<div className="flex pb-16 font-NanumSquareNeoBold">
-				<div className="mr-3 text-2xl md:text-lg">
+				<div className="mr-3 text-2xl md:text-lg sm:text-lg">
 					{AboutFirstPageIntro.text[1]}
 				</div>
-				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm">
+				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm sm:text-sm">
 					{hoverText}
 				</div>
 			</div>
-			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem] md:text-xl">
+			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem] md:text-xl sm:text-lg">
 				{AboutFirstPageIntro2.map((text) => (
 					<div
-						className="mb-6 md:mb-8"
+						className="mb-6 md:mb-8 sm:mb-9"
 						key={text.id}
 						onMouseEnter={() => setHoverText(text.text)}
 						onMouseLeave={() => setHoverText(null)}
