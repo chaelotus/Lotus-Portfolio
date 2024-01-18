@@ -13,6 +13,7 @@ import DetailModal from './pages/Detail/views/DetailModal';
 import Contact from './pages/Contact/views/Contact';
 import Footer from './pages/Footer/views/Footer';
 import MoveToTop from './common/components/MoveToTop';
+import SmallSizeNav from './common/components/SmallSizeNav';
 
 const store = createStore(rootReducer);
 function App() {
@@ -29,6 +30,7 @@ function App() {
 						<Project />
 						<Contact />
 					</Container>
+					<SmallSizeNav />
 					<DetailModal />
 					<Footer />
 				</div>
