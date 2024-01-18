@@ -4,12 +4,12 @@ const Skills = () => {
 	return (
 		<div className="h-[160vh] py-[20rem] dark:text-white md:py-[10rem]">
 			<h1
-				className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem]"
+				className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem] sm:text-2xl"
 				id="skills"
 			>
 				{SkillsTitle}
 			</h1>
-			<div className="grid grid-cols-5 gap-x-12 gap-y-12 md:grid-cols-3">
+			<div className="grid grid-cols-5 gap-x-12 gap-y-12 md:grid-cols-3 sm:grid-cols-3">
 				{SkillsDetail.map((data) => {
 					return (
 						<SkillCard svg={data.svg} title={data.title} key={data.title} />
