@@ -53,7 +53,7 @@ const ProjectSection = <T extends keyof ProjectPageInfoType>({
 				<div onClick={handleClick} className="lg:hidden md:hidden">
 					<ClickButton />
 				</div>
-				<span className="lg:hidden md:hidde sm:ml-4 sm:text-lineGray">
+				<span className="lg:hidden md:hidden sm:ml-4 sm:text-lineGray">
 					클릭 버튼을 누르면 더 자세한 내용을 볼 수 있어요!
 				</span>
 			</div>
