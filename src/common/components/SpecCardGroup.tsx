@@ -9,7 +9,7 @@ interface SpecCardGroupProps {
 const SpecCardGroup = ({ title, svgFile, dataObject }: SpecCardGroupProps) => {
 	return (
 		<>
-			<h1 className="text-3xl font-NanumSquareNeoExtraBold pt-[3rem] pb-[2rem]">
+			<h1 className="text-3xl md:text-xl font-NanumSquareNeoExtraBold pt-[3rem] pb-[2rem]">
 				{title}
 			</h1>
 			<SpecCard svgFile={svgFile} dataObject={dataObject} />

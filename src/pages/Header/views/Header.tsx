@@ -34,7 +34,7 @@ const Header = () => {
 						<img src={LogoImage} alt="logo" />
 					</div>
 				</Link>
-				<ul className="flex justify-between items-center">
+				<ul className="flex justify-between items-center md:justify-between">
 					{headerNavList.map((item) => (
 						<Link
 							activeClass="active"

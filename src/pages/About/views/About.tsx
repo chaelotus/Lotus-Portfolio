@@ -21,7 +21,7 @@ const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
 	return (
 		<div
-			className="h-[calc(300vh-12.588rem)] pt-[12.588rem] dark:text-white"
+			className="h-[calc(300vh-12.588rem)] md:h-[300vh] pt-[12.588rem] dark:text-white"
 			id="about"
 		>
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold">{AboutTitle}</h1>
@@ -29,15 +29,17 @@ const About = () => {
 				{AboutFirstPageIntro.text[0]}
 			</div>
 			<div className="flex pb-16 font-NanumSquareNeoBold">
-				<div className="mr-3 text-2xl">{AboutFirstPageIntro.text[1]}</div>
-				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray">
+				<div className="mr-3 text-2xl md:text-lg">
+					{AboutFirstPageIntro.text[1]}
+				</div>
+				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm">
 					{hoverText}
 				</div>
 			</div>
-			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem]">
+			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem] md:text-xl">
 				{AboutFirstPageIntro2.map((text) => (
 					<div
-						className="mb-6"
+						className="mb-6 md:mb-8"
 						key={text.id}
 						onMouseEnter={() => setHoverText(text.text)}
 						onMouseLeave={() => setHoverText(null)}
@@ -68,7 +70,7 @@ const About = () => {
 				<div className="font-NanumSquareNeoExtraBold mr-5">
 					{AboutSubTtile4}
 				</div>
-				<div className="border-l-2 border-gray pl-5">
+				<div className="border-l-2 border-gray pl-5 md:text-base">
 					<span className="text-pointOrange">{StudyDetail[0]}</span>
 					<span className="text-lineGray">{StudyDetail[1]}</span>
 				</div>

@@ -1,6 +1,6 @@
 const ContactCard = () => {
 	return (
-		<div className="flex flex-col justify-center w-[337px] h-[400px] border-solid border-2 border-indigo-600">
+		<div className="flex flex-col justify-center w-[337px] h-[400px] border-solid border-2 border-indigo-600 md:w-[200px] md:h-[350px]">
 			{/* <img /> */}
 			<div className="bg-white h-[60%]">이미지</div>
 			<div className="h-[40%]">

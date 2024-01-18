@@ -3,7 +3,10 @@ import { LernMoreText, LotusPageMainText } from '../constants';
 
 const Lotus = () => {
 	return (
-		<article className="flex-col h-screen dark:text-white" id="Lotus">
+		<article
+			className="flex-col h-screen dark:text-white lotus-section"
+			id="Lotus"
+		>
 			<article className="flex justify-between items-center pt-[110px] h-[43.125rem]">
 				<section>
 					<section className="text-6xl font-PretendardMedium mb-2">
@@ -20,7 +23,7 @@ const Lotus = () => {
 						<span>{LotusPageMainText.text[4]}</span>
 					</section>
 				</section>
-				<section>이미지</section>
+				<section className="md:hidden">이미지</section>
 			</article>
 			<article className="flex-col text-xl pt-16 text-gray">
 				<section className="text-center font-koreaMachineLight font-bold">

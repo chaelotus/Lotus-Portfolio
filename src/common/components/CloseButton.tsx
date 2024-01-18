@@ -10,7 +10,7 @@ const CloseButton = () => {
 	return (
 		<div
 			onClick={handleClick}
-			className="flex items-center px-3 py-2 bg-white rounded-lg cursor-pointer shadow-2xl"
+			className="flex items-center px-3 py-2 bg-white rounded-lg cursor-pointer shadow-2xl dark:text-black"
 		>
 			<div className="text-2xl mr-1">
 				<RiCloseFill />
