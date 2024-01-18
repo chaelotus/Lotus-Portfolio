@@ -24,24 +24,24 @@ const About = () => {
 			className="h-[calc(300vh-12.588rem)] md:h-[300vh] pt-[12.588rem] dark:text-white"
 			id="about"
 		>
-			<h1 className="text-3xl font-NanumSquareNeoExtraBold sm:text-2xl">
+			<h1 className="text-3xl font-NanumSquareNeoExtraBold sm:text-2xl mobile:text-xl">
 				{AboutTitle}
 			</h1>
-			<div className="pb-20 font-NanumSquareNeoBold dark:text-gray">
+			<div className="pb-20 font-NanumSquareNeoBold dark:text-gray mobile:text-sm">
 				{AboutFirstPageIntro.text[0]}
 			</div>
 			<div className="flex pb-16 font-NanumSquareNeoBold">
-				<div className="mr-3 text-2xl md:text-lg sm:text-lg">
+				<div className="mr-3 text-2xl md:text-lg sm:text-lg mobile:text-[1px] mobile:mr-1 mobile:min-w-[18.96px]">
 					{AboutFirstPageIntro.text[1]}
 				</div>
-				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm sm:text-sm">
+				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm sm:text-sm mobile:text-[0.3px]">
 					{hoverText}
 				</div>
 			</div>
-			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem] md:text-xl sm:text-lg">
+			<div className="text-2xl font-NanumSquareNeoBold pb-[7.8rem] md:text-xl sm:text-lg mobile:text-sm mobile:bottom-0">
 				{AboutFirstPageIntro2.map((text) => (
 					<div
-						className="mb-6 md:mb-8 sm:mb-9"
+						className="mb-6 md:mb-8 sm:mb-9 mobile:mb-9 dark:text-white"
 						key={text.id}
 						onMouseEnter={() => setHoverText(text.text)}
 						onMouseLeave={() => setHoverText(null)}
@@ -69,10 +69,10 @@ const About = () => {
 				/>
 			</div>
 			<div className="flex items-center text-3xl pb-[5rem]">
-				<div className="font-NanumSquareNeoExtraBold mr-5 sm:text-2xl">
+				<div className="font-NanumSquareNeoExtraBold mr-5 sm:text-2xl mobile:text-xl">
 					{AboutSubTtile4}
 				</div>
-				<div className="border-l-2 border-gray pl-5 md:text-base sm:text-sm">
+				<div className="border-l-2 border-gray pl-5 md:text-base sm:text-sm mobile:text-xs">
 					<span className="text-pointOrange">{StudyDetail[0]}</span>
 					<span className="text-lineGray">{StudyDetail[1]}</span>
 				</div>
