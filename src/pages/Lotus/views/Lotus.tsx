@@ -8,14 +8,14 @@ const Lotus = () => {
 			id="Lotus"
 		>
 			<article className="flex justify-between items-center pt-[110px] h-[43.125rem]">
-				<section>
-					<section className="text-6xl font-PretendardMedium mb-2">
+				<section className="sm:w-full sm:text-center">
+					<section className="text-6xl font-PretendardMedium mb-2 sm:text-4xl">
 						{LotusPageMainText.text[0]}
 					</section>
-					<section className="text-3xl font-koreaMachineLight">
+					<section className="text-3xl font-koreaMachineLight sm:text-xl">
 						{LotusPageMainText.text[1]}
 					</section>
-					<section className="text-3xl font-koreaMachineLight">
+					<section className="text-3xl font-koreaMachineLight sm:text-xl">
 						<span>{LotusPageMainText.text[2]}</span>
 						<span className="text-pointOrange font-bold">
 							{LotusPageMainText.text[3]}
@@ -23,9 +23,9 @@ const Lotus = () => {
 						<span>{LotusPageMainText.text[4]}</span>
 					</section>
 				</section>
-				<section className="md:hidden">이미지</section>
+				<section className="md:hidden sm:hidden">이미지</section>
 			</article>
-			<article className="flex-col text-xl pt-16 text-gray">
+			<article className="flex-col text-xl pt-16 text-gray sm:text-lg">
 				<section className="text-center font-koreaMachineLight font-bold">
 					{LernMoreText}
 				</section>
