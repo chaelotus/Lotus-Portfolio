@@ -13,8 +13,8 @@ const SmallSizeNav = ({
 	return (
 		isSmallMenuClick &&
 		createPortal(
-			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-background z-999">
-				<ul className="z-1000 w-full h-full relative flex justify-center items-center flex-col dark:bg-[#222222]  ">
+			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-background z-999 md:hidden lg:hidden">
+				<ul className="z-1000 w-full h-full relative flex justify-center items-center flex-col dark:bg-[#222222]">
 					{headerNavList.map((item) => (
 						<Link
 							activeClass="active"
@@ -25,7 +25,7 @@ const SmallSizeNav = ({
 							offset={item.offset}
 							duration={500}
 						>
-							<li key={item.id} className="sm:mb-7">
+							<li key={item.id} className="sm:mb-7 mobile:mb-9">
 								<Button
 									children={item.title}
 									setIsSmallMenuClick={setIsSmallMenuClick}

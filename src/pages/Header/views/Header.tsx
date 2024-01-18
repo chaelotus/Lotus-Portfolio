@@ -63,7 +63,7 @@ const Header = () => {
 						/>
 					</div>
 				</div>
-				<div className="sm:hidden flex w-full justify-between items-center header">
+				<div className="sm:hidden mobile:hidden flex w-full justify-between items-center header">
 					<Link to="Lotus" spy={true} smooth={true}>
 						<div className="w-20 cursor-pointer">
 							<img src={LogoImage} alt="logo" />

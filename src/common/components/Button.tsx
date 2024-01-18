@@ -14,7 +14,7 @@ const Button = ({
 	};
 	return (
 		<button
-			className="bg-white dark:bg-[#222222] rounded-md px-5 py-2 flex justify-center items-center text-md mr-10 shadow-2xl font-PretendardSemiBold md:text-sm sm:bg-background sm:shadow-none sm:text-lg"
+			className="bg-white rounded-md px-5 py-2 flex justify-center items-center mr-10 sm:mr-0 mobile:mr-0 shadow-2xl font-PretendardSemiBold md:text-sm sm:bg-background sm:shadow-none sm:text-lg mobile:bg-background mobile:shadow-none mobile:text-lg"
 			onClick={handleNavBtnClick}
 		>
 			{children}
