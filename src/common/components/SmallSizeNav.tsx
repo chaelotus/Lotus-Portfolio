@@ -7,14 +7,14 @@ const SmallSizeNav = ({
 	isSmallMenuClick,
 	setIsSmallMenuClick,
 }: {
-	isSmallMenuClick: boolean;
-	setIsSmallMenuClick: React.Dispatch<React.SetStateAction<boolean>>;
+	isSmallMenuClick?: boolean;
+	setIsSmallMenuClick?: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
 	return (
 		isSmallMenuClick &&
 		createPortal(
 			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-background z-999">
-				<ul className="z-1000 w-full h-full relative flex justify-center items-center flex-col">
+				<ul className="z-1000 w-full h-full relative flex justify-center items-center flex-col dark:bg-[#222222]  ">
 					{headerNavList.map((item) => (
 						<Link
 							activeClass="active"

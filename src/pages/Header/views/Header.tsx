@@ -45,7 +45,17 @@ const Header = () => {
 							/>
 						</div>
 					</Link>
-					<div>
+					<div className="flex items-center">
+						<div
+							className="w-9 cursor-pointer items-center mr-3"
+							onClick={handleDarkModeClick}
+						>
+							{isDark ? (
+								<img src={dark} alt="dark" />
+							) : (
+								<img src={light} alt="light" />
+							)}
+						</div>
 						<SlMenu onClick={handleSmallMenuClick} className="cursor-pointer" />
 						<SmallSizeNav
 							isSmallMenuClick={isSmallMenuClick}
