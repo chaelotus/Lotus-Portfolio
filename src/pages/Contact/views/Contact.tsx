@@ -4,7 +4,7 @@ import ContactCard from '../../../common/components/ContactCard';
 const Contact = () => {
 	return (
 		<div className="h-[calc(100vh-210px)] dark:text-white" id="contact">
-			<h1 className="text-3xl font-NanumSquareNeoExtraBold flex justify-center pb-[100px]">
+			<h1 className="text-3xl font-NanumSquareNeoExtraBold flex justify-center pb-[100px] sm:text-2xl">
 				{contactPageTitle}
 			</h1>
 			<section className="flex justify-around">
