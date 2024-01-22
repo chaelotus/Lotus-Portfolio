@@ -7,7 +7,7 @@ const Contact = () => {
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold flex justify-center pb-[5rem] sm:text-2xl mobile:text-xl">
 				{contactPageTitle}
 			</h1>
-			<section className="flex justify-around mobile:flex mobile:flex-col">
+			<section className="flex justify-around mobile:flex mobile:flex-col mobile:items-center">
 				<ContactCard />
 				<ContactCard />
 				<ContactCard />
