@@ -1,8 +1,7 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import ClickButton from './ClickButton';
-import { RootState } from '../store/Store';
 import { openModal } from '../reducers/IsOpen';
-import { useEffect } from 'react';
+
 const ProjectCard = ({
 	svgFile,
 	projectTitle,
@@ -10,14 +9,11 @@ const ProjectCard = ({
 	svgFile: string;
 	projectTitle: string;
 }) => {
-	const isOpen = useSelector((state: RootState) => state.ModalReducer.isOpen);
 	const dispatch = useDispatch();
 	const handleClick = () => {
 		dispatch(openModal());
 	};
-	useEffect(() => {
-		console.log(isOpen);
-	}, [isOpen]);
+
 	return (
 		<div
 			onClick={handleClick}
