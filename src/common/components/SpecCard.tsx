@@ -31,12 +31,9 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 				<ul className="list-disc text-pointGray">
 					{sectionData.detail.map((text: string, index: number) => {
 						return (
-							<div className="flex items-start sm:mb-2 mobile:mb-2">
+							<div className="flex items-start sm:mb-2 mobile:mb-2" key={index}>
 								<TfiWidgetAlt className="sm:text-sm mobile:text-xs" />
-								<li
-									className="pl-2 md:text-sm sm:text-xs mobile:text-[6px]"
-									key={index}
-								>
+								<li className="pl-2 md:text-sm sm:text-xs mobile:text-[6px]">
 									{text}
 								</li>
 							</div>
