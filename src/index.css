@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'koreaMachineBold';
-	src: url(/src/assets/fonts/한국기계연구원_bold.ttf);
-	font-display: swap;
-}
-@font-face {
 	font-family: 'koreaMachineLight';
 	src: url(/src/assets/fonts/한국기계연구원_Light.ttf);
 	font-display: swap;
@@ -23,21 +18,8 @@
 	font-display: swap;
 }
 @font-face {
-	font-family: 'NanumSquareNeoExtraHeavy';
-	src: url(/src/assets/fonts/NanumSquareNeo-eHv.ttf);
-	font-display: swap;
-}
-@font-face {
-	font-family: 'OAGothicExtraBold';
-	src: url(/src/assets/fonts/OAGothic-ExtraBold.ttf);
-}
-@font-face {
 	font-family: 'OAGothicExtraMedium';
 	src: url(/src/assets/fonts/OAGothic-Medium.ttf);
-}
-@font-face {
-	font-family: 'PretendardBold';
-	src: url(/src/assets/fonts/Pretendard-Bold.woff2);
 }
 @font-face {
 	font-family: 'PretendardMedium';
