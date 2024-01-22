@@ -25,7 +25,7 @@ const Lotus = () => {
 				</section>
 				<section className="md:hidden sm:hidden mobile:hidden">이미지</section>
 			</article>
-			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base">
+			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base blink">
 				<section className="text-center font-koreaMachineLight font-bold">
 					{LernMoreText}
 				</section>

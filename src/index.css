@@ -69,3 +69,16 @@ a {
 	background-color: #f1a33b;
 	color: #ffffff;
 }
+@keyframes blink-effect {
+	0% {
+		opacity: 0;
+		transform: translateY(-15%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.blink {
+	animation: blink-effect 3s infinite;
+}
