@@ -34,7 +34,7 @@ const About = () => {
 				<div className="mr-3 text-2xl md:text-lg sm:text-lg mobile:text-[1px] mobile:mr-1 mobile:min-w-[18.96px]">
 					{AboutFirstPageIntro.text[1]}
 				</div>
-				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm sm:text-sm mobile:text-[0.3px]">
+				<div className="border-b-2 border-dashed border-pointOrange grow font-pointGray text-xl text-pointGray md:text-sm sm:text-sm mobile:h-[50px] mobile:text-[0.3px]">
 					{hoverText}
 				</div>
 			</div>
