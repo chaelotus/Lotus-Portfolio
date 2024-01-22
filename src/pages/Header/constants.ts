@@ -12,7 +12,6 @@ export const headerNavList: headerNavListData = [
 	{
 		id: 'project',
 		title: 'PROJECT',
-		offset: 160,
 	},
 	{
 		id: 'contact',

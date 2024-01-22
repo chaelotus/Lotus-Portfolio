@@ -2,11 +2,11 @@ import SkillCard from '../../../common/components/SkillCard';
 import { SkillsTitle, SkillsDetail } from '../constants';
 const Skills = () => {
 	return (
-		<div className="h-[160vh] py-[20rem] dark:text-white md:py-[10rem]">
-			<h1
-				className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem] sm:text-2xl mobile:text-xl mobile:pb-[2rem]"
-				id="skills"
-			>
+		<div
+			className="h-[80vh] mt-[10rem] mb-[5rem] dark:text-white md:py-[10rem]"
+			id="skills"
+		>
+			<h1 className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem] sm:text-2xl mobile:text-xl mobile:pb-[2rem]">
 				{SkillsTitle}
 			</h1>
 			<div className="grid grid-cols-5 gap-x-12 gap-y-12 md:grid-cols-3 sm:grid-cols-3 mobile:grid-cols-2">
