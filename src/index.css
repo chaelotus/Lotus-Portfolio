@@ -69,6 +69,9 @@ a {
 	background-color: #f1a33b;
 	color: #ffffff;
 }
+.active button:hover {
+	color: #ffffff;
+}
 @keyframes blink-effect {
 	0% {
 		opacity: 0;
