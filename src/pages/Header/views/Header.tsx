@@ -51,9 +51,9 @@ const Header = () => {
 							onClick={handleDarkModeClick}
 						>
 							{isDark ? (
-								<img src={dark} alt="dark" />
-							) : (
 								<img src={light} alt="light" />
+							) : (
+								<img src={dark} alt="dark" />
 							)}
 						</div>
 						<SlMenu onClick={handleSmallMenuClick} className="cursor-pointer" />
@@ -90,9 +90,9 @@ const Header = () => {
 							onClick={handleDarkModeClick}
 						>
 							{isDark ? (
-								<img src={dark} alt="dark" />
-							) : (
 								<img src={light} alt="light" />
+							) : (
+								<img src={dark} alt="dark" />
 							)}
 						</li>
 					</ul>
