@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../common/store/Store';
@@ -5,6 +6,14 @@ import CloseButton from '../../../common/components/CloseButton';
 
 const DetailModal = () => {
 	const isOpen = useSelector((state: RootState) => state.ModalReducer.isOpen);
+
+	useEffect(() => {
+		if (isOpen) document.body.style.overflow = 'hidden';
+		return () => {
+			document.body.style.overflow = 'unset';
+		};
+	}, [isOpen]);
+
 	if (!isOpen) {
 		return null;
 	}
@@ -12,10 +21,11 @@ const DetailModal = () => {
 		isOpen &&
 		createPortal(
 			<div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-backgroundGray z-999 dark:bg-[#222222]">
-				<div className="bg-backgroundGray p-[20px] w-[80%] z-1000 h-full relative dark:bg-[#222222] dark:text-white">
-					<div className="fixed flex right-20">
+				<div className="bg-backgroundGray p-[20px] w-[90%] z-1000 h-full relative overflow-y-scroll dark:bg-[#222222] dark:text-white">
+					<div className="fixed flex right-20 md:right-10 sm:right-10 mobile:right-5">
 						<CloseButton />
 					</div>
+					<div className="pt-20 flex flex-col items-center"></div>
 				</div>
 			</div>,
 

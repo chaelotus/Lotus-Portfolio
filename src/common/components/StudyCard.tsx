@@ -27,12 +27,9 @@ const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 			<ul>
 				{sectionData.detail.map((text, index) => {
 					return (
-						<div className="flex items-center">
+						<div className="flex items-center" key={index}>
 							<PiArrowElbowDownRightThin />
-							<li
-								className="ml-3 text-pointGray md:text-base sm:text-sm mobile:text-xs"
-								key={index}
-							>
+							<li className="ml-3 text-pointGray md:text-base sm:text-sm mobile:text-xs">
 								{text}
 							</li>
 						</div>

@@ -14,7 +14,7 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 	return (
 		<div className="flex justify-between items-center bg-white rounded-xl p-5 font-NanumSquareNeoBold dark:text-black">
 			<section className="w-[15%] md:shrink-0 sm:shrink-2 sm:mr-2 mobile:shrink-2 mobile:mr-2">
-				<img className="w-[95px]" src={svgFile} />
+				<img className="w-[95px]" src={svgFile} alt="agency-image" />
 			</section>
 			<section className="flex-col w-[25%]">
 				<div className="font-bold text-xl mb-2 sm:text-base mobile:text-xs">
@@ -31,12 +31,9 @@ const SpecCard = <T extends keyof AboutSecondPageDetailType>({
 				<ul className="list-disc text-pointGray">
 					{sectionData.detail.map((text: string, index: number) => {
 						return (
-							<div className="flex items-start sm:mb-2 mobile:mb-2">
+							<div className="flex items-start sm:mb-2 mobile:mb-2" key={index}>
 								<TfiWidgetAlt className="sm:text-sm mobile:text-xs" />
-								<li
-									className="pl-2 md:text-sm sm:text-xs mobile:text-[6px]"
-									key={index}
-								>
+								<li className="pl-2 md:text-sm sm:text-xs mobile:text-[6px]">
 									{text}
 								</li>
 							</div>

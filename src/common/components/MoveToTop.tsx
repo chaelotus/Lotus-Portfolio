@@ -5,7 +5,10 @@ const MoveToTop = () => {
 	};
 	return (
 		<div className="text-6xl mobile:text-5xl text-pointOrange fixed bottom-10 right-10 mobile:bottom-5 mobile:right-5 cursor-pointer">
-			<BsArrowUpCircleFill className="hover:scale-105" onClick={handleClick} />
+			<BsArrowUpCircleFill
+				className="hover:scale-110 hover:ease-in-out hover:duration-200 hover:opacity-90"
+				onClick={handleClick}
+			/>
 		</div>
 	);
 };
