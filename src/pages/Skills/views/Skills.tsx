@@ -12,7 +12,9 @@ const Skills = () => {
 			<div className="grid grid-cols-5 gap-x-12 gap-y-12 md:grid-cols-3 sm:grid-cols-3 mobile:grid-cols-2">
 				{SkillsDetail.map((data) => {
 					return (
-						<SkillCard svg={data.svg} title={data.title} key={data.title} />
+						<div key={data.title} className="flex justify-center items-center">
+							<SkillCard svg={data.svg} title={data.title} />
+						</div>
 					);
 				})}
 			</div>
