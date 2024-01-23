@@ -7,6 +7,7 @@ import useCalculate from '../../../common/utils/customHooks/useCalculate';
 
 const Project = () => {
 	const [start, translateX] = useCalculate();
+	console.log(start, translateX);
 	gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 사용시 필수
 	const sectionRef = useRef(null); // useRef로 참조할 요소
 	const triggerRef = useRef(null);
@@ -35,7 +36,7 @@ const Project = () => {
 		return () => {
 			pin.kill();
 		}; // 모든 애니메이션 중단
-	}, []);
+	}, [start, translateX]);
 	return (
 		<section
 			className="relative project-section flex flex-col pt-[10rem] mb-[20rem] h-screen dark:text-white"
