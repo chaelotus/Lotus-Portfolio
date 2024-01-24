@@ -1,7 +1,12 @@
 import { PiCaretDownThin } from 'react-icons/pi';
 import { LernMoreText, LotusPageMainText } from '../constants';
+import useTyping from '../../../common/utils/customHooks/useTyping';
 
 const Lotus = () => {
+	const sentence = LotusPageMainText.text[1];
+	const { word, targetRef } = useTyping(sentence);
+	const parts = word.split(/(박채연|\n)/);
+
 	return (
 		<div className="flex-col h-screen dark:text-white lotus-section" id="Lotus">
 			<article className="flex justify-between items-center pt-[110px] h-[43.125rem]">
@@ -9,16 +14,23 @@ const Lotus = () => {
 					<section className="text-6xl font-PretendardMedium mb-2 sm:text-4xl mobile:text-3xl">
 						{LotusPageMainText.text[0]}
 					</section>
-					<section className="text-3xl font-koreaMachineLight sm:text-xl mobile:text-lg">
-						{LotusPageMainText.text[1]}
-					</section>
-					<section className="text-3xl font-koreaMachineLight sm:text-xl mobile:text-lg">
-						<span>{LotusPageMainText.text[2]}</span>
-						<span className="text-pointOrange font-bold">
-							{LotusPageMainText.text[3]}
-						</span>
-						<span>{LotusPageMainText.text[4]}</span>
-					</section>
+					<div
+						className="text-3xl font-koreaMachineLight sm:text-xl mobile:text-lg"
+						ref={targetRef}
+					>
+						{parts.map((part, index) => {
+							if (part === '\n') return <p key={index}>{part}</p>;
+							else if (part === '박채연') {
+								return (
+									<span key={index} className="text-pointOrange font-bold">
+										{part}
+									</span>
+								);
+							} else {
+								return <span key={index}>{part}</span>;
+							}
+						})}
+					</div>
 				</section>
 				<section className="md:hidden sm:hidden mobile:hidden">이미지</section>
 			</article>
