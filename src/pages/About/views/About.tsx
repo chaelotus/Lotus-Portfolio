@@ -16,13 +16,16 @@ import codestate from '../../../assets/codestate.svg';
 import certificate from '../../../assets/certificate.svg';
 import SpecCardGroup from '../../../common/components/SpecCardGroup';
 import StudyCard from '../../../common/components/StudyCard';
+import useAnimation from '../../../common/utils/customHooks/useAnimation';
 
 const About = () => {
 	const [hoverText, setHoverText] = useState<null | string>(null);
+	const [targetRef] = useAnimation(['smooth', 'invisible']);
 	return (
 		<div
 			className="h-[290vh] md:h-[300vh] pt-[12.588rem] dark:text-white"
 			id="about"
+			ref={targetRef}
 		>
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold sm:text-2xl mobile:text-xl">
 				{AboutTitle}

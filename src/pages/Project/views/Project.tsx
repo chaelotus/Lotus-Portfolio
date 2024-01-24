@@ -4,9 +4,11 @@ import { gsap } from 'gsap';
 import { ProjectPageInfo } from '../../../common/constants';
 import ProjectSection from '../../../common/components/ProjectSection';
 import useCalculate from '../../../common/utils/customHooks/useCalculate';
+import useAnimation from '../../../common/utils/customHooks/useAnimation';
 
 const Project = () => {
 	const [start, translateX] = useCalculate();
+	const [targetRef] = useAnimation(['smooth', 'invisible']);
 	console.log(start, translateX);
 	gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 사용시 필수
 	const sectionRef = useRef(null); // useRef로 참조할 요소
@@ -38,9 +40,10 @@ const Project = () => {
 		}; // 모든 애니메이션 중단
 	}, [start, translateX]);
 	return (
-		<section
+		<div
 			className="relative project-section flex flex-col pt-[10rem] mb-[20rem] h-screen dark:text-white"
 			id="project"
+			ref={targetRef}
 		>
 			<h1 className="items-start text-3xl font-NanumSquareNeoExtraBold mb-[5rem] md:mb-[3rem] sm:mb-[2rem] sm:text-2xl mobile:text-xl mobile:mb-[2rem]">
 				PROJECT
@@ -58,7 +61,7 @@ const Project = () => {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 export default Project;
