@@ -3,10 +3,7 @@ import { LernMoreText, LotusPageMainText } from '../constants';
 
 const Lotus = () => {
 	return (
-		<article
-			className="flex-col h-screen dark:text-white lotus-section"
-			id="Lotus"
-		>
+		<div className="flex-col h-screen dark:text-white lotus-section" id="Lotus">
 			<article className="flex justify-between items-center pt-[110px] h-[43.125rem]">
 				<section className="sm:w-full sm:text-center mobile:w-full mobile:text-center">
 					<section className="text-6xl font-PretendardMedium mb-2 sm:text-4xl mobile:text-3xl">
@@ -33,7 +30,7 @@ const Lotus = () => {
 					<PiCaretDownThin className="text-4xl" />
 				</section>
 			</article>
-		</article>
+		</div>
 	);
 };
 export default Lotus;

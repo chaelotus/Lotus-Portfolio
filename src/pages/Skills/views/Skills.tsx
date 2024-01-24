@@ -1,10 +1,13 @@
 import SkillCard from '../../../common/components/SkillCard';
+import useAnimation from '../../../common/utils/customHooks/useAnimation';
 import { SkillsTitle, SkillsDetail } from '../constants';
 const Skills = () => {
+	const [targetRef] = useAnimation(['smooth', 'invisible']);
 	return (
 		<div
 			className="h-[80vh] md:h-screen sm:h-screen mobile:h-[150vh] mt-[10rem] mb-[5rem] dark:text-white"
 			id="skills"
+			ref={targetRef}
 		>
 			<h1 className="text-3xl font-NanumSquareNeoExtraBold pb-[5rem] sm:text-2xl mobile:text-xl mobile:pb-[2rem]">
 				{SkillsTitle}
