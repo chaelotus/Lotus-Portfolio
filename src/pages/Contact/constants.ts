@@ -29,7 +29,7 @@ export const contactCard: contactCardType = {
 	email: {
 		mainImage: thirdImage,
 		mainImageDark: thirdImageDark,
-		description: '아래의 방법으로 연락할 수 있어요. \n 언제든지 환영합니다.',
+		description: '아래의 방법으로 연락할 수 있어요. \n pcy6904@naver.com',
 		iconImage: SiMinutemailer,
 		iconTitle: 'MAIL',
 	},
