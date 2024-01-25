@@ -5,6 +5,7 @@ export type contactCardType = {
 		description: string;
 		iconImage: string;
 		iconTitle: string;
+		url: string | null;
 	};
 	blog: {
 		mainImage: string;
@@ -12,6 +13,7 @@ export type contactCardType = {
 		description: string;
 		iconImage: string;
 		iconTitle: string;
+		url: string | null;
 	};
 	email: {
 		mainImage: string;
@@ -19,5 +21,6 @@ export type contactCardType = {
 		description: string;
 		iconImage: string;
 		iconTitle: string;
+		url: string | null;
 	};
 };
