@@ -18,6 +18,7 @@ export default {
 				black: '#000000',
 				pointGray: '#666666',
 				gray: '#9E9E9E',
+				darkGray: '#504E4E',
 				lineGray: '#C6C6C6',
 				pointOrange: '#F1A33B',
 				porintGreen: '#45C96A',
