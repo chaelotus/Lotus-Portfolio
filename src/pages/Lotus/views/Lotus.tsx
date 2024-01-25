@@ -2,13 +2,19 @@ import { PiCaretDownThin } from 'react-icons/pi';
 import { LernMoreText, LotusPageMainText } from '../constants';
 import useTyping from '../../../common/utils/customHooks/useTyping';
 import LotusImage from '../../../assets/LotusImage.svg';
+import LotusImage_dark from '../../../assets/LotusImage_dark.svg';
 import useAnimation from '../../../common/utils/customHooks/useAnimation';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../../common/store/Store';
 
 const Lotus = () => {
 	const sentence = LotusPageMainText.text[1];
 	const { word, targetRef } = useTyping(sentence);
 	const parts = word.split(/(박채연|\n)/);
 	const [targetRef2] = useAnimation(['smooth', 'invisible']);
+	const isDark = useSelector(
+		(state: RootState) => state.DarkModeReducer.isDark,
+	);
 
 	return (
 		<div className="flex-col h-screen dark:text-white lotus-section" id="Lotus">
@@ -36,7 +42,11 @@ const Lotus = () => {
 					</div>
 				</section>
 				<section ref={targetRef2} className="md:hidden sm:hidden mobile:hidden">
-					<img className="w-[350px] h-[300px]" src={LotusImage} />
+					{isDark ? (
+						<img className="w-[350px] h-[300px]" src={LotusImage_dark} />
+					) : (
+						<img className="w-[350px] h-[300px]" src={LotusImage} />
+					)}
 				</section>
 			</article>
 			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base blink">
