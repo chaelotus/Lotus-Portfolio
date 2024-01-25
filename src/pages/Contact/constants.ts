@@ -22,8 +22,7 @@ export const contactCard: contactCardType = {
 	blog: {
 		mainImage: secondImage,
 		mainImageDark: secondImageDark,
-		description:
-			'몰랐던 부분이나 새로운 개념을 공부할 때 \n 기록해놓은 블로그를 구경해보세요.',
+		description: '새로운 개념을 공부할 때\n 기록해놓은 블로그를 구경해보세요.',
 		iconImage: SiTistory,
 		iconTitle: 'BLOG',
 		url: 'https://lotusstudy.tistory.com/',
