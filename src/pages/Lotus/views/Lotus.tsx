@@ -1,6 +1,7 @@
 import { PiCaretDownThin } from 'react-icons/pi';
 import { LernMoreText, LotusPageMainText } from '../constants';
 import useTyping from '../../../common/utils/customHooks/useTyping';
+import LotusImage from '../../../assets/LotusImage.svg';
 
 const Lotus = () => {
 	const sentence = LotusPageMainText.text[1];
@@ -32,7 +33,9 @@ const Lotus = () => {
 						})}
 					</div>
 				</section>
-				<section className="md:hidden sm:hidden mobile:hidden">이미지</section>
+				<section className="md:hidden sm:hidden mobile:hidden">
+					<img className="w-[300px] h-[250px]" src={LotusImage} />
+				</section>
 			</article>
 			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base blink">
 				<section className="text-center font-koreaMachineLight font-bold">
