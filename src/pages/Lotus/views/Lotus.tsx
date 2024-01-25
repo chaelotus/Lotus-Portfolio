@@ -36,7 +36,7 @@ const Lotus = () => {
 					</div>
 				</section>
 				<section ref={targetRef2} className="md:hidden sm:hidden mobile:hidden">
-					<img className="w-[300px] h-[250px]" src={LotusImage} />
+					<img className="w-[350px] h-[300px]" src={LotusImage} />
 				</section>
 			</article>
 			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base blink">
