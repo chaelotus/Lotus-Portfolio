@@ -13,7 +13,7 @@ const StudyCard = <T extends keyof AboutThirdPageDetailType>({
 
 	return (
 		<div
-			className="bg-white rounded-xl p-6 font-NanumSquareNeoBold cursor-pointer mb-8"
+			className="bg-white rounded-xl p-6 font-NanumSquareNeoBold cursor-pointer mb-8 duration-500 transition-all hover:scale-105 shadow-2xl"
 			onClick={() => window.open(`${url}`)}
 		>
 			<div className="flex text-2xl md:text-xl sm:text-lg mobile:text-[11px] mb-6">

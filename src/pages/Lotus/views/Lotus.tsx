@@ -1,11 +1,14 @@
 import { PiCaretDownThin } from 'react-icons/pi';
 import { LernMoreText, LotusPageMainText } from '../constants';
 import useTyping from '../../../common/utils/customHooks/useTyping';
+import LotusImage from '../../../assets/LotusImage.svg';
+import useAnimation from '../../../common/utils/customHooks/useAnimation';
 
 const Lotus = () => {
 	const sentence = LotusPageMainText.text[1];
 	const { word, targetRef } = useTyping(sentence);
 	const parts = word.split(/(박채연|\n)/);
+	const [targetRef2] = useAnimation(['smooth', 'invisible']);
 
 	return (
 		<div className="flex-col h-screen dark:text-white lotus-section" id="Lotus">
@@ -32,7 +35,9 @@ const Lotus = () => {
 						})}
 					</div>
 				</section>
-				<section className="md:hidden sm:hidden mobile:hidden">이미지</section>
+				<section ref={targetRef2} className="md:hidden sm:hidden mobile:hidden">
+					<img className="w-[350px] h-[300px]" src={LotusImage} />
+				</section>
 			</article>
 			<article className="flex-col text-xl pt-16 text-gray sm:text-lg mobile:text-base blink">
 				<section className="text-center font-koreaMachineLight font-bold">

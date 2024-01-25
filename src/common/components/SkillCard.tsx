@@ -4,7 +4,7 @@ type SkillCardProps = {
 };
 const SkillCard = ({ svg, title }: SkillCardProps) => {
 	return (
-		<div className="w-[180px] h-[213px] dark:text-black mobile:w-[155px] mobile:h-[188px]">
+		<div className="w-[180px] h-[213px] dark:text-black mobile:w-[155px] mobile:h-[188px] duration-300 transition-all shadow-2xl hover:scale-105">
 			<img
 				className="h-[158px] rounded-tr-xl rounded-tl-xl mobile:h-[135px]"
 				src={svg}

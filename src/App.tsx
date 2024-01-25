@@ -1,21 +1,22 @@
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { useEffect, useState, Suspense, lazy } from 'react';
 import { Provider } from 'react-redux';
 import { legacy_createStore as createStore } from 'redux';
 import Container from '@mui/material/Container';
-import Header from './pages/Header/views/Header';
-import Lotus from './pages/Lotus/views/Lotus';
-import About from './pages/About/views/About';
-import Skills from './pages/Skills/views/Skills';
-import Project from './pages/Project/views/Project';
 import rootReducer from './common/store/Store';
-import DetailModal from './pages/Detail/views/DetailModal';
-import Contact from './pages/Contact/views/Contact';
-import Footer from './pages/Footer/views/Footer';
-import MoveToTop from './common/components/MoveToTop';
-import SmallSizeNav from './common/components/SmallSizeNav';
-import { TbAlertCircleFilled } from 'react-icons/tb';
-import { useEffect, useState } from 'react';
+import WarningScreen from './common/components/WarningScreen';
+import Loading from './common/components/Loading';
+
+const Header = lazy(() => import('./pages/Header/views/Header'));
+const Lotus = lazy(() => import('./pages/Lotus/views/Lotus'));
+const About = lazy(() => import('./pages/About/views/About'));
+const Skills = lazy(() => import('./pages/Skills/views/Skills'));
+const Project = lazy(() => import('./pages/Project/views/Project'));
+const DetailModal = lazy(() => import('./pages/Detail/views/DetailModal'));
+const Contact = lazy(() => import('./pages/Contact/views/Contact'));
+const Footer = lazy(() => import('./pages/Footer/views/Footer'));
+const MoveToTop = lazy(() => import('./common/components/MoveToTop'));
+const SmallSizeNav = lazy(() => import('./common/components/SmallSizeNav'));
 
 const store = createStore(rootReducer);
 function App() {
@@ -32,16 +33,9 @@ function App() {
 
 	return (
 		<Provider store={store}>
-			<BrowserRouter>
+			<Suspense fallback={<Loading />}>
 				{isXsmallSize ? (
-					<div className="bg-background w-full h-full absolute flex justify-center items-center">
-						<div className="flex flex-col items-center">
-							<TbAlertCircleFilled className="text-4xl mb-3 text-pointOrange" />
-							<span className="font-NanumSquareNeoBold text-pointGray font-bold">
-								화면을 390px 이상으로 넓혀주세요.
-							</span>
-						</div>
-					</div>
+					<WarningScreen />
 				) : (
 					<div className="dark:bg-[#222222] overflow-x-hidden">
 						<Header />
@@ -58,7 +52,7 @@ function App() {
 						<Footer />
 					</div>
 				)}
-			</BrowserRouter>
+			</Suspense>
 		</Provider>
 	);
 }
