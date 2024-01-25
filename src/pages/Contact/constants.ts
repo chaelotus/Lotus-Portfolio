@@ -17,6 +17,7 @@ export const contactCard: contactCardType = {
 			'프론트엔드 개발자가 되기 위해 \n 열심히 준비한 github 공간을 구경해보세요.',
 		iconImage: SiGithub,
 		iconTitle: 'GITHUB',
+		url: 'https://github.com/chaelotus',
 	},
 	blog: {
 		mainImage: secondImage,
@@ -25,6 +26,7 @@ export const contactCard: contactCardType = {
 			'몰랐던 부분이나 새로운 개념을 공부할 때 \n 기록해놓은 블로그를 구경해보세요.',
 		iconImage: SiTistory,
 		iconTitle: 'BLOG',
+		url: 'https://lotusstudy.tistory.com/',
 	},
 	email: {
 		mainImage: thirdImage,
@@ -32,5 +34,6 @@ export const contactCard: contactCardType = {
 		description: '아래의 방법으로 연락할 수 있어요. \n pcy6904@naver.com',
 		iconImage: SiMinutemailer,
 		iconTitle: 'MAIL',
+		url: null,
 	},
 };
