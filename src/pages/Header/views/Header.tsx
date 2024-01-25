@@ -52,14 +52,14 @@ const Header = () => {
 						>
 							{isDark ? (
 								<img
-									src={light}
-									alt="light"
+									src={dark}
+									alt="dark"
 									className="hover:scale-110 hover:ease-in-out"
 								/>
 							) : (
 								<img
-									src={dark}
-									alt="dark"
+									src={light}
+									alt="light"
 									className="hover:scale-110 hover:ease-in-out"
 								/>
 							)}
@@ -99,14 +99,14 @@ const Header = () => {
 						>
 							{isDark ? (
 								<img
-									src={light}
-									alt="light"
+									src={dark}
+									alt="dark"
 									className="hover:scale-110 hover:ease-in-out"
 								/>
 							) : (
 								<img
-									src={dark}
-									alt="dark"
+									src={light}
+									alt="light"
 									className="hover:scale-110 hover:ease-in-out"
 								/>
 							)}
