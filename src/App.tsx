@@ -12,7 +12,6 @@ const Lotus = lazy(() => import('./pages/Lotus/views/Lotus'));
 const About = lazy(() => import('./pages/About/views/About'));
 const Skills = lazy(() => import('./pages/Skills/views/Skills'));
 const Project = lazy(() => import('./pages/Project/views/Project'));
-const DetailModal = lazy(() => import('./pages/Detail/views/DetailModal'));
 const Contact = lazy(() => import('./pages/Contact/views/Contact'));
 const Footer = lazy(() => import('./pages/Footer/views/Footer'));
 const MoveToTop = lazy(() => import('./common/components/MoveToTop'));
@@ -48,7 +47,6 @@ function App() {
 							<Contact />
 						</Container>
 						<SmallSizeNav />
-						<DetailModal />
 						<Footer />
 					</div>
 				)}
