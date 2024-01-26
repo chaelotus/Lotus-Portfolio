@@ -9,7 +9,7 @@ import useAnimation from '../../../common/utils/customHooks/useAnimation';
 const Project = () => {
 	const [start, translateX] = useCalculate();
 	const [targetRef] = useAnimation(['smooth', 'invisible']);
-	console.log(start, translateX);
+
 	gsap.registerPlugin(ScrollTrigger); // ScrollTrigger 사용시 필수
 	const sectionRef = useRef(null); // useRef로 참조할 요소
 	const triggerRef = useRef(null);
