@@ -1,5 +1,6 @@
 import { ProjectPageInfoType } from './type';
 import project_pp from '../assets/project_pp.svg';
+import project_lp from '../assets/project_lp.svg';
 import project_gw from '../assets/project_gw.svg';
 
 export const ProjectPageInfo: ProjectPageInfoType = {
@@ -26,25 +27,20 @@ export const ProjectPageInfo: ProjectPageInfoType = {
 			'나에게 지겨운 물건이 누군가에겐 새로울 수 있다는 취지로',
 			'만든 프로젝트입니다.',
 		],
+		url: 'https://funky-booklet-5c4.notion.site/PLAYPACK-3034c3209b4b42338b75ed4284b508f0?pvs=4',
 	},
 	lotusPortfolio: {
-		svg: project_pp,
+		svg: project_lp,
 		team: 'Solo',
 		title: 'LOTUS PORTFOLIO',
 		date: '2023.12.15 - 현재  /  1명 (프론트엔드 1명)',
 		subTitle: '기술스택',
-		skill: [
-			'React',
-			'TypeScript',
-			'React-Router-Dom',
-			'TailWind',
-			'Redux',
-			'Famer-motion',
-		],
+		skill: ['React', 'TypeScript', 'TailWind', 'Redux'],
 		detail: [
-			'새로운 언어와 라이브러리를 적용해보고 싶어 만든 포트폴리오 웹사이트입니다.',
-			'반응형 웹사이트로 제작하였으며, 반전모드도 지원합니다.',
+			'새로운 프레임워크를 사용해보고 싶어 만든 포트폴리오 웹사이트입니다.',
+			'반응형 웹사이트로 제작하였으며, 다크모드도 지원합니다.',
 		],
+		url: 'https://funky-booklet-5c4.notion.site/Lotus-Portfolio-7aed085bc37c49f8bd56d63127e2181b?pvs=4',
 	},
 	graduationWork: {
 		svg: project_gw,
@@ -57,6 +53,7 @@ export const ProjectPageInfo: ProjectPageInfoType = {
 			'코로나 시대로 비대면 수요가 급증함에 따라서 일회용품 사용량이 증가하였습니다.',
 			'보상 시스템을 이용하여 사용자의 흥미를 유발시킬 뿐만 아니라 올바른 분리배출을 유도하여 환경문제 해결을 위한 지원순환 활동이 목표로 개발한 프로젝트입니다.',
 		],
+		url: 'https://funky-booklet-5c4.notion.site/AI-c6fad293440f4ca59f15eb54a1aa1bd9?pvs=4',
 	},
 };
 export const CloseBtn = 'CLOSE';

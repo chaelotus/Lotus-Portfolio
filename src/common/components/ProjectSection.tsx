@@ -3,8 +3,6 @@ import SkillTag from './SkillTag';
 import { ProjectPageInfoType } from '../type';
 import ProjectCard from './ProjectCard';
 import ClickButton from './ClickButton';
-import { useDispatch } from 'react-redux';
-import { openModal } from '../reducers/IsOpen';
 
 type ProjectSectionProps<T extends keyof ProjectPageInfoType> = {
 	dataObject: ProjectPageInfoType[T];
@@ -12,11 +10,8 @@ type ProjectSectionProps<T extends keyof ProjectPageInfoType> = {
 const ProjectSection = <T extends keyof ProjectPageInfoType>({
 	dataObject,
 }: ProjectSectionProps<T>) => {
-	const dispatch = useDispatch();
 	const data = extractSectionData(dataObject);
-	const handleClick = () => {
-		dispatch(openModal());
-	};
+
 	return (
 		<div className="flex justify-between w-[1100px] h-[630px] md:flex-col-reverse sm:flex-col sm:h-[530px] mobile:flex-col mobile:h-[490px]">
 			<div className="flex flex-col w-[40%] md:w-[60%] mobile:w-[360px]">
@@ -51,9 +46,13 @@ const ProjectSection = <T extends keyof ProjectPageInfoType>({
 				</div>
 			</div>
 			<div className="w-[60%] sm:flex sm:items-center mobile:flex mobile:flex-col-reverse">
-				<ProjectCard svgFile={data.svg} projectTitle={data.title} />
+				<ProjectCard
+					svgFile={data.svg}
+					projectTitle={data.title}
+					url={data.url}
+				/>
 				<div
-					onClick={handleClick}
+					onClick={() => window.open(data.url)}
 					className="lg:hidden md:hidden mobile:flex mobile:mt-2"
 				>
 					<ClickButton />
