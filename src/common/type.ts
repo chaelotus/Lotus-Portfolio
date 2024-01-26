@@ -7,6 +7,7 @@ export type ProjectPageInfoType = {
 		subTitle: string;
 		skill: string[];
 		detail: string[];
+		url: string;
 	};
 	lotusPortfolio: {
 		svg: string;
@@ -16,6 +17,7 @@ export type ProjectPageInfoType = {
 		subTitle: string;
 		skill: string[];
 		detail: string[];
+		url: string;
 	};
 	graduationWork: {
 		svg: string;
@@ -25,5 +27,6 @@ export type ProjectPageInfoType = {
 		subTitle: string;
 		skill: string[];
 		detail: string[];
+		url: string;
 	};
 };
